@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<style>
+.photo-container {
+}
+.photo-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.photo-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #444;
+  border-radius: 4px;
+}
+.photo-text {
+  color: #4b4b4b;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.4;
+}
+.quote-line:last-child {
+  text-indent: 1.5em;
+}
+.h1{
+    text-align: center;
+}
+</style>
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  
+  <div class="photo-container">
+    <div class="photo-content">
+      <img src="{{ page.image | relative_url }}" 
+           alt="" 
+           class="photo-image">
+      
+      <div class="photo-text">
+        {% for line in page.quote %}
+          <div class="quote-line">{{ line }}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

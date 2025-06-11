@@ -1,0 +1,6 @@
+---
+layout: wave_post
+title: Кремовая Орхидея
+image: /assets/images/cream.jpg
+alt: cream
+---

@@ -1,0 +1,6 @@
+---
+layout: wave_post
+title: Кимоно
+image: /assets/images/kimono.jpg
+alt: kimono
+---
