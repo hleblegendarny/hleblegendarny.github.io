@@ -4,5 +4,5 @@ title: Розовая вена
 image: /assets/images/pink_ven.jpg
 alt: pink_ven
 dates: 20.04.2025
-dateb: 08.03.2025
+dateb: 08.03.2010
 ---
