@@ -1,8 +1,0 @@
----
-layout: photo_text_post
-title: Орхидея
-image: "/assets/images/capriza.jpg"
-quote:
- - "\"Эта орхидея...
- -          ...Сносгшибательна\""
----

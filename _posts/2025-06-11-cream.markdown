@@ -3,4 +3,6 @@ layout: wave_post
 title: Кремовая Орхидея
 image: /assets/images/cream.jpg
 alt: cream
+dates: 19.05.2025
+dateb: 06.05.2025
 ---

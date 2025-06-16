@@ -3,4 +3,6 @@ layout: wave_post
 title: Кимоно
 image: /assets/images/kimono.jpg
 alt: kimono
+dates: 03.05.2025
+dateb: 20.03.2025
 ---
