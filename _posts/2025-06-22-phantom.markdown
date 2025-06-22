@@ -1,0 +1,8 @@
+---
+layout: wave_post
+title: Фантом
+image: /assets/images/phantom.jpg
+alt: phantom
+dates: 16.06.2025
+dateb: 13.06.2025
+---

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --wave-color: rgba(0, 153, 255, 0.15);
+    }
+    
+    .wave-post {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    }
+    
+    .wave-title {
+      text-align: center;
+      color: #ccbe8f;
+      margin-bottom: 2rem;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+    }
+    
+    .wave-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0;
+      padding: 40px 0;
+    }
+    
+    .wave-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-image: 
+        radial-gradient(circle at 10% 20%, var(--wave-color), transparent 25%),
+        radial-gradient(circle at 90% 80%, var(--wave-color), transparent 25%),
+        radial-gradient(circle at 50% 50%, var(--wave-color), transparent 35%);
+      border-radius: 20px;
+      border: 2px solid rgba(0, 102, 204, 0.1);
+      box-shadow: inset 0 0 30px rgba(0,102,204,0.1);
+    }
+    
+    .wave-image {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .wave-description {
+      text-align: center;
+      color: #333;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      padding: 0 1rem;
+      max-width: 600px;
+      margin: 2rem auto;
+      font-style: italic;
+    }
+    .data-table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .data-table td {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        .data-table td:first-child {
+            font-weight: bold;
+            width: 30%;
+            background-color: #f2f2f2;
+        }
+        .divider {
+            height: 1px;
+            background-color: #000;
+            margin: 5px 0;
+        }
+    
+    /* Адаптивность для мобильных */
+    @media (max-width: 768px) {
+      .wave-post {
+        padding: 1rem;
+        margin: 1rem;
+      }
+      
+      .wave-container {
+        margin: 1.5rem 0;
+        padding: 30px 0;
+      }
+      
+      .wave-title {
+        font-size: 1.5rem;
+      }
+      
+      .wave-description {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+      }
+      
+      :root {
+        --wave-color: rgba(0, 153, 255, 0.1);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .wave-container {
+        padding: 20px 0;
+      }
+      
+      .wave-image {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wave-post">
+    <h1 class="wave-title">Фантом</h1>
+    
+    <div class="wave-container">
+      <div class="wave-frame"></div>
+      <img 
+        src="/assets/images/phantom.jpg" 
+        alt="phantom" 
+        class="wave-image"
+      >
+    </div>
+    
+    <div class="wave-description">
+      
+        <table class="data-table">
+          <tr>
+            <td>Дата поступления</td>
+            <td>13.06.2025</td>
+          </tr>
+          <tr>
+            <td>Даты цветения</td>
+            <td>16.06.2025</td>
+          </tr>
+      
+      
+
+        </table>
+  </div>
+</body>
+</html>
